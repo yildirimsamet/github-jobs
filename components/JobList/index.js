@@ -1,27 +1,8 @@
-import { useEffect, useState } from "react";
-import { useCity } from "../../contexts/CityContext";
+import { useJob } from "../../contexts/JobContext";
 import JobCard from "../JobCard";
 import styles from "./JobList.module.css";
 const JobList = () => {
-  const [jobs, setJobs] = useState([]);
-  const { city, setLoading } = useCity();
-  useEffect(() => {
-    setLoading(true);
-    fetch(process.env.API, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        url: `https://jobs.github.com/positions.json?location=${city}`,
-      }),
-    })
-      .then((res) => res.json())
-      .then((res) => {
-        setJobs(res.data);
-        setLoading(false);
-      });
-  }, [city]);
+  const { jobs } = useJob();
   return (
     <div className={styles.jobListWrapper}>
       {jobs.length > 1 ? (
