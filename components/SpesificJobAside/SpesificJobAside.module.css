@@ -1,0 +1,35 @@
+.wrapper {
+  width: 230px;
+  margin-right: 75px;
+}
+.backLink {
+  color: var(--light-blue);
+  font-size: 14px;
+  font-weight: 500;
+
+  margin-bottom: 36px;
+}
+.backLink > a {
+  display: flex;
+  align-items: center;
+}
+.backLink > a > span {
+  margin-left: 15px;
+}
+.header {
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.info {
+  font-weight: 500;
+  color: var(--dark-blue);
+  font-size: 14px;
+}
+.info > a {
+  color: var(--light-blue);
+}
+.howtoapply a {
+  color: var(--light-blue);
+}

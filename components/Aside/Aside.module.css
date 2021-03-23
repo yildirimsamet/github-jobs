@@ -1,0 +1,46 @@
+.asideWrapper {
+  width: 380px;
+}
+.asideText {
+  color: var(--dark-blue);
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.radioWrapper {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.header {
+  font-size: 14px;
+  color: var(--grey);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.inputWrapper {
+  height: 50px;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 4px 4px 17px;
+  margin-bottom: 25px;
+}
+.inputWrapper form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.input {
+  flex: 1;
+  height: 30px;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+}
+.input::placeholder {
+  color: var(--grey);
+}

@@ -1,0 +1,60 @@
+.wrapper {
+  width: 100%;
+}
+.header {
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--dark-blue);
+  display: flex;
+  margin-top: 0;
+}
+.badge {
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
+  font-weight: bold;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 17px;
+  max-height: 28px;
+  min-width: 68px;
+}
+.iconWrapper {
+  color: var(--grey);
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  font-size: 16px;
+  margin-right: 8px;
+}
+.companyHeader {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  margin: 35px 0;
+}
+.companyHeaderImg {
+  width: 60px;
+  height: 60px;
+}
+.companyHeaderRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 16px;
+}
+.companyHeaderTitle {
+  font-weight: bold;
+  color: var(--dark-blue);
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.content {
+  font-size: 16px;
+  color: var(--dark-blue);
+  line-height: 24px;
+}

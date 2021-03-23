@@ -1,0 +1,23 @@
+.wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+  background: rgba(0, 0, 0, 0.35);
+  width: 100%;
+  height: 100%;
+}
+.loaderWrapper {
+  display: flex;
+  align-items: center;
+  animation: turn 5s infinite linear;
+}
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
